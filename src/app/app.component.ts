@@ -4,9 +4,19 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
+  standalone:true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+
+
+export class AppComponent
+{
   title = 'Proyecto_4';
+  constructor()
+  {
+    console.log('Funciones de prueba');
+    console.warn("Advertencia");
+    console.log("Prueba de conflictos");
+  }
 }
